@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="right"
+            android:id="@+id/btn_log_out_2"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_orange_round_button"
+            android:text="Log Out"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+    <ImageView
+        android:id="@+id/ic_risk"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_risk"
+        android:layout_marginTop="50dp"
+        />
+
+
+        <TextView
+            android:text="@string/registration_label"
+            style="@style/MainHeading"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/testView"
+            android:hint="Select course"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/ic_drop_down"
+            android:background="@drawable/et_border_gray"
+            />
+
+
+
+        <EditText
+            android:id="@+id/et_regs_username"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/editText"
+            android:hint= "@string/et_label_username"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regs_buisnessName"
+            style="@style/editText"
+            android:hint="@string/et_label_buisness_name"
+            />
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/relativelayout_state"-->
+<!--            android:layout_below="@+id/relativelayout_gender"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@drawable/et_border_gray"-->
+
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:paddingHorizontal="15dp">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:padding="16dp"-->
+<!--                android:id="@+id/autoComplete_category"-->
+<!--                style="@style/autoCompleText"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_marginRight="50dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:hint="Buisness Category"-->
+<!--                android:textColorHint="@color/light_gray"-->
+<!--                android:textSize="14dp" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spinner_category"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:dropDownHorizontalOffset="-5dp"-->
+<!--                android:dropDownVerticalOffset="40dp"-->
+<!--                android:padding="0dp"-->
+<!--                android:visibility="gone"-->
+<!--                 />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imageview_category"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:padding="7.5dp"-->
+<!--                android:layout_marginRight="7.5dp"-->
+<!--                android:src="@drawable/ic_drop_down"/>-->
+
+
+<!--        </RelativeLayout>-->
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_spinner_buisness_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/et_border_gray"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="20dp"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/spinner_buisness_category"
+                style="@style/autoCompleText"
+                android:hint="Business Category"
+                android:dropDownAnchor="@id/ll_spinner_buisness_category"
+                android:dropDownHeight="100dp"
+                android:dropDownWidth="200dp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_buisness_category"
+                android:hint="Business Category *"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_drop_down"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_spinner_buisness_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/et_border_gray"
+            android:layout_marginTop="15sp"
+            android:paddingHorizontal="20dp"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/spinner_buisness_type"
+                style="@style/autoCompleText"
+                android:hint="Buisness Type"
+                android:textColor="@color/black"
+               android:visibility="gone"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Search_buisness_type"
+                android:hint="Business Type *"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_drop_down"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regs_gstNumber"
+
+            style="@style/editText"
+            android:hint="@string/et_label_gst"
+            android:maxLength="15"
+            />
+
+        <TextView
+            android:id="@+id/pickgallry"
+            android:text="+ Upload certificate"
+            style="@style/SubHeading"
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/app_green"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <LinearLayout
+            android:id="@+id/ll_spinner_countyr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/et_border_gray"
+            android:layout_marginTop="15sp"
+            android:paddingHorizontal="20dp"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/spinner_countyr"
+                style="@style/autoCompleText"
+                android:hint="Select Country"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_spinner_country"
+                android:hint="Select Country *"
+                android:paddingTop="12dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:paddingBottom="12dp"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_drop_down"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/et_border_gray"
+            android:layout_marginTop="15sp"
+            android:paddingHorizontal="20dp"
+            android:id="@+id/ll_spinner_state"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/spinner_state"
+                style="@style/autoCompleText"
+                android:hint="Select State"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_spinner_state"
+                android:hint="Select State *"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_drop_down"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/et_border_gray"
+            android:layout_marginTop="15sp"
+            android:paddingHorizontal="20dp"
+            android:id="@+id/ll_spinner_city"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/spinner_city"
+                style="@style/autoCompleText"
+                android:hint="Select City"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_spinner_city"
+                android:hint="Select City *"
+                android:paddingTop="12dp"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:paddingBottom="12dp"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_drop_down"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regs_mobileNo"
+           android:textColor="@color/light_gray"
+            style="@style/editText"
+            android:hint="@string/et_moble_label"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/editText"
+            android:hint="@string/et_label_add_mob_no"
+            android:id="@+id/et_regs_mobileNo2"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/editText"
+            android:visibility="gone"
+            android:hint="@string/et_label_add_mob_no"
+            android:id="@+id/et_regs_mobileNo3"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regs_emaild"
+            style="@style/editText"
+            android:hint="@string/et_label_email"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_regs_website"
+            style="@style/editText"
+            android:hint="@string/et_label_website" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have accept "
+                 android:buttonTint="@color/app_color"
+                 />
+              <TextView
+                  android:id="@+id/tv_term_condition"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Terms &amp; Conditions"
+                  android:textColor="@color/app_blue"
+                  />
+        </LinearLayout>
+
+
+        <TextView
+        android:id="@+id/btn_welcome_process2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_orange_round_button"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:padding="13dp"
+        android:textAlignment="center"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="20dp"
+       />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

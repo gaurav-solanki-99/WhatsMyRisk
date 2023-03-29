@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">WhatsMyRisk</string>
+    <string name="next_label">Next</string>
+    <string name="welocme_message">Welcome to<font fgcolor='#FFF5751A'>"What's" My Risk</font>-"\n" an online platform which enables \n you to know about businesses \nand the risk in doing business\nwith them.</string>
+    <string name="resend_label">Having Problem? <font fgcolor='#FFF5751A'>"Resend Code"</font></string>
+    <string name="phonenumber_label">Phone Number</string>
+    <string name="phonenumber_label2">Insert your phone number to continue</string>
+    <string name="verifynumber_label">VERIFY PHONE NUMBER</string>
+    <string name="verifynumber_label2">Please enter code sent to number</string>
+    <string name="et_moble_label">+91 0000 000 000</string>
+    <string name="registration_label">Registration</string>
+    <string name="et_label_username">Name *</string>
+    <string name="et_label_buisness_name">Business Name *</string>
+    <string name="et_label_buisness_category">GST Number</string>
+    <string name="et_label_buisness_type">Business Type</string>
+    <string name="et_label_buisness_name_required">Business Name *</string>
+    <string name="et_label_gst">GST Number</string>
+    <string name="et_label_add_mob_no">Additional Mobile Number</string>
+    <string name="et_label_email">Email ID</string>
+    <string name="et_label_website">Website</string>
+    <string name="dashboard_label">Dashboard</string>
+
+
+    <string-array name="Languages">
+        <item>Select Value</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+
+
+    <string-array name="BuisnessCategory">
+        <item>Business Category</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+    </string-array>
+
+
+    <string-array name="SearchByBuisnessCategory">
+        <item>Search By Business Category</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+    </string-array>
+
+    <string-array name="BuisnessSubCategory">
+        <item>Business Sub Category</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+    </string-array>
+
+    <string-array name="BuisnessType">
+        <item>Business Type</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+    </string-array>
+
+
+    <string-array name="City">
+        <item>City</item>
+        <item>City 1</item>
+        <item>City 2</item>
+        <item>City 3</item>
+        <item>City 4</item>
+        <item>City 5</item>
+    </string-array>
+
+    <string-array name="State">
+        <item>State</item>
+        <item>State 1</item>
+        <item>State 2</item>
+        <item>State 3</item>
+        <item>State 4</item>
+        <item>State 5</item>
+    </string-array>
+
+
+    <string-array name="Country">
+        <item>Select Country</item>
+        <item>Country 1</item>
+        <item>Country 2</item>
+        <item>Country 3</item>
+        <item>Country 4</item>
+        <item>Country 5</item>
+    </string-array>
+
+    <string-array name="Country2">
+        <item>Country</item>
+        <item>Country 1</item>
+        <item>Country 2</item>
+        <item>Country 3</item>
+        <item>Country 4</item>
+        <item>Country 5</item>
+    </string-array>
+
+
+    <string-array name="Rating">
+        <item>Rating *</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="Paymaster">
+        <item>Paymaster</item>
+        <item>Good</item>
+        <item>Bad</item>
+        <item>Worst</item>
+
+    </string-array>
+
+
+
+
+
+
+    <string name="tab_home">Home</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_account">Account</string>
+    <string name="tab_report">Profile</string>
+    <string name="add_customer_n_feedback">Add Customer \n Feedback</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="my_added_customer">My Added Customers</string>
+    <string name="my_added_vendros">My Added Vendors</string>
+    <string name="search">Search Result</string>
+    <string name="label_contact_us">Please send your message and we’ll</string>
+    <string name="label_contact_us2">get back to you right away!</string>
+    <string name="send_message">SEND MESSAGE</string>
+    <string name="et_title">Title</string>
+    <string name="et_message">Write Your Message here</string>
+    <string name="upload_using_excel">Upload using Excel</string>
+    <string name="enter_details_manualy">Enter Details Manually</string>
+    <string name="upload">UPLOAD</string>
+    <string name="next">NEXT</string>
+    <string name="add_vendor">Add Vendor</string>
+    <string name="add_feedback_about_a_vendor">Add Feedback about a Vendor</string>
+    <string name="et_rupee">₹ Rupee</string>
+    <string name="preferred_credit_limit">Preferred Credit Limit</string>
+    <string name="describe_your_buisness_with_buisness">Describe your experience with the business</string>
+    <string name="search_reviews_and_ratings_of_buisness">Search Reviews and Ratings "\n"of Business.</string>
+    <string name="submit">SUBMIT</string>
+    <string name="search_value">Search...</string>
+
+
+</resources>

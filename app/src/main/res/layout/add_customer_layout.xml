@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="25dp"
+    android:paddingTop="15dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/constant_app_bar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:text="1"
+                style="@style/title"
+                android:textStyle="bold"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/app_color"
+                android:background="@drawable/ic_ellipse"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="@string/upload_using_excel"
+                style="@style/MainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="28dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_download"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id="@+id/btn_download_Template"
+                android:text="Download Template"
+                style="@style/title"
+                android:textStyle="normal"
+                android:textColor="@color/app_blue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/ic_risk2"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_upload_certificate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/contact_form"
+            android:background="@drawable/bg_orange_round_button"
+            android:text="@string/upload"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="17dp"
+            android:textAlignment="center"
+            android:paddingVertical="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:text="2"
+                style="@style/title"
+                android:textStyle="bold"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/app_color"
+                android:background="@drawable/ic_ellipse"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="@string/enter_details_manualy"
+                style="@style/MainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_next_customer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/contact_form"
+            android:background="@drawable/et_border_round"
+            android:layout_marginLeft="35dp"
+            android:text="@string/next"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingVertical="8dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

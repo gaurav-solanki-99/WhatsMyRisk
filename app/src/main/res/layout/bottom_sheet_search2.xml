@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp"
+
+    android:background="@drawable/bg_bottom_sheet_background"
+    android:padding="25dp"
+     >
+
+    <TextView
+        android:id="@+id/page_desc"
+        android:text="@string/search_reviews_and_ratings_of_buisness"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:textStyle="normal"
+        android:textAlignment="textStart"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/et_border_gray"
+        android:layout_marginTop="15sp"
+        android:paddingHorizontal="15dp"
+        >
+        <Spinner
+            android:id="@+id/spinner_buisness_category"
+            style="@style/spinner"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        style="@style/editText"
+        android:hint="@string/et_label_buisness_name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        style="@style/editText"
+        android:hint="@string/et_label_gst"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/editText"
+        android:hint="Mobile Number"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/et_border_gray"
+        android:layout_marginTop="15sp"
+        android:paddingHorizontal="15dp"
+        >
+        <Spinner
+            android:id="@+id/spinner_countyr"
+            style="@style/spinner"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/et_border_gray"
+        android:layout_marginTop="15sp"
+        android:paddingHorizontal="15dp"
+        >
+        <Spinner
+            android:id="@+id/spinner_state"
+            style="@style/spinner"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/et_border_gray"
+        android:layout_marginTop="15sp"
+        android:paddingHorizontal="15dp"
+        >
+        <Spinner
+            android:id="@+id/spinner_city"
+            style="@style/spinner"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bnt_search_dialog"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_orange_round_button"
+        android:text="SEARCH"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:padding="13dp"
+        android:textAlignment="center"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

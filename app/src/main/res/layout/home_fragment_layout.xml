@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="25dp"
+    android:paddingTop="15dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+
+        android:id="@+id/appbar_layout"
+        layout="@layout/constant_app_bar"/>
+
+
+
+     <LinearLayout
+         android:layout_marginTop="25dp"
+         android:id="@+id/ll_horizantal_top"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         app:layout_constraintTop_toBottomOf="@id/appbar_layout"
+         app:layout_constraintLeft_toRightOf="parent"
+         android:weightSum="2"
+         >
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:cardBackgroundColor="@color/app_color"
+               app:cardCornerRadius="10dp"
+               >
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:id="@+id/add_customer_btn_1"
+                   android:padding="10dp"
+                   android:layout_height="match_parent">
+                   <ImageView
+                       android:id="@+id/icon_person"
+                       android:layout_width="18dp"
+                       android:layout_height="18dp"
+                       android:src="@drawable/ic_account"
+                       android:tint="@color/white"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:layout_marginTop="5dp"
+
+                       />
+                         <TextView
+                             android:id="@+id/tv1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Add Customers \nFeedback"
+                             android:textColor="@color/white"
+                             app:layout_constraintLeft_toRightOf="@id/icon_person"
+                             app:layout_constraintTop_toTopOf="parent"
+                             android:textStyle="bold"
+                             android:layout_marginLeft="10dp"
+
+                             />
+                   <ImageView
+                       android:id="@+id/add_customer_btn"
+                       android:layout_width="18dp"
+                       android:layout_height="18dp"
+                       android:src="@drawable/ic_back_arroow_circular"
+                       android:tint="@color/white"
+                       app:layout_constraintTop_toBottomOf="@id/tv1"
+                       app:layout_constraintLeft_toRightOf="@id/icon_person"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="10dp"
+
+                       />
+
+
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <View
+               android:layout_width="10dp"
+               android:layout_height="match_parent"
+               />
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+
+             app:cardBackgroundColor="@color/app_ligth_pink"
+             app:cardCornerRadius="10dp"
+             >
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:id="@+id/add_vendor_btn_1"
+                 android:layout_width="match_parent"
+                 android:padding="10dp"
+                 android:layout_height="wrap_content">
+                 <ImageView
+                     android:id="@+id/icon_person2"
+                     android:layout_width="18dp"
+                     android:layout_height="18dp"
+                     android:src="@drawable/ic_icon_vendro"
+                     app:layout_constraintLeft_toLeftOf="parent"
+                     app:layout_constraintTop_toTopOf="parent"
+                     android:layout_marginTop="5dp"
+
+                     />
+                 <TextView
+                     android:id="@+id/tv2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Add Vendors \nFeedback"
+                     android:textColor="@color/black"
+                     app:layout_constraintLeft_toRightOf="@id/icon_person2"
+                     app:layout_constraintTop_toTopOf="parent"
+                     android:layout_marginLeft="10dp"
+
+                     android:textStyle="bold"
+
+                     />
+                 <ImageView
+                     android:id="@+id/add_vendor_btn"
+                     android:layout_width="18dp"
+                     android:layout_height="18dp"
+                     android:src="@drawable/ic_back_arroow_circular"
+                     app:layout_constraintTop_toBottomOf="@id/tv2"
+                     android:tint="@color/app_color"
+                     android:backgroundTint="@color/app_color"
+                     app:layout_constraintLeft_toRightOf="@id/icon_person2"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginTop="10dp"
+                     />
+
+
+
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+         </androidx.cardview.widget.CardView>
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_horizantal_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:weightSum="1"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:text="@string/my_added_vendros"
+            style="@style/MainHeading"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            app:layout_constraintTop_toBottomOf="@id/ll_horizantal_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <TextView
+            android:text="@string/view_all"
+            android:id="@+id/btn_view_all_vendors"
+            style="@style/title"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:textStyle="normal"
+            android:textAlignment="textEnd"
+            android:textColor="@color/app_color"
+            app:layout_constraintTop_toBottomOf="@id/ll_horizantal_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_vender_rv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_vender"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#85AEAEA9"
+        app:layout_constraintTop_toBottomOf="@id/list_vender_rv"
+         app:layout_constraintBottom_toTopOf="@id/ll_cutomer"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_cutomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:weightSum="1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/list_vender_rv"
+        >
+
+        <TextView
+            style="@style/MainHeading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="@string/my_added_customer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_horizantal_top" />
+
+        <TextView
+            android:text="@string/view_all"
+            style="@style/title"
+            android:id="@+id/btn_view_all_customers"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:textStyle="normal"
+            android:textColor="@color/app_color"
+            android:textAlignment="textEnd"
+
+            app:layout_constraintTop_toBottomOf="@id/ll_horizantal_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_customer_rv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_cutomer"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

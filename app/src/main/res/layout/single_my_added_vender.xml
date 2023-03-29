@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ll_circular_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_green_circular"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="A"
+                style="@style/MainHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+
+                />
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/my_added_vendros"
+            style="@style/MainHeading"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_adc1"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:text="@string/dashboard_label"
+            style="@style/SubHeading"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/light_gray"
+
+
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/icon_edit"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.1"
+        android:src="@drawable/ic_baseline_edit_24"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+        android:id="@+id/icon_eye"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_green_circular"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

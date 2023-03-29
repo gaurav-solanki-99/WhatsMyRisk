@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/welocmetext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="@string/welocme_message"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/welcome_gp_icon"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welocmetext"
+
+            android:layout_weight="0.5"
+
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_app_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:fontFamily="@font/poppins_regular"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintTop_toBottomOf="parent"
+
+
+          >
+          <TextView
+               android:layout_marginTop="10dp"
+              android:id="@+id/tv1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Step 1"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/welcome_gp_icon"
+              android:textColor="@color/app_color"
+              android:textAlignment="center"
+
+              />
+          <TextView
+              android:layout_marginTop="10dp"
+              android:id="@+id/tv2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Verify Yourself"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tv1"
+              android:textColor="@color/black"
+              android:textAlignment="center"
+              android:fontFamily="@font/poppins_regular"
+
+              />
+      </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
